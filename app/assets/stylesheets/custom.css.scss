@@ -3,6 +3,13 @@ $navbar-default-bg: #4B67A1;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+@media screen and (min-width: 480px) {
+    .jumbotron {
+        font-size: 150%;
+    }
+}
+
 #logo{
   float: left;
   padding-left: 10%;
@@ -16,4 +23,54 @@ $navbar-default-bg: #4B67A1;
 #logo:hover {
   color: #fff;
   text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.jumbotron{
+    background-image: asset-url('challemanMainImage.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.jumbotron h1{
+    color: #FF1B1B;
+    font-weight: bold;
+    text-transform:uppercase;;
+    margin-bottom: 40px;
+}
+
+.introductionQuality ul{
+    list-style: none
+}
+
+button.btn.btn-default {
+    color: #FF1B1B;
+    text-transform: uppercase;
+}
+
+#buttonSignUp:hover{
+    background-color: #000;
+}
+
+footer{
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+}
+
+footer a:hover{
+    color: #222;
+}
+
+footer small{
+    float: left;
+}
+
+footer ul{
+    float: right;
+    list-style:  none;
 }
