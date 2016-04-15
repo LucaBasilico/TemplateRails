@@ -70,7 +70,12 @@ footer small{
     float: left;
 }
 
-footer ul{
+#footerLeft{
+    float: left;
+    list-style: none;
+}
+
+#footerRight{
     float: right;
     list-style:  none;
 }
