@@ -1,12 +1,61 @@
-<p style="font-size:2.5em">Il nostro credo</p>
-<p>
-    Se uno si sente Natural Challeman sa da subito che tipo di vita lavorativa avrà continue sfide. Continue missioni da portare a termine: prendere una laurea, partecipare a corsi di management, diventare master sicuramente aiuta, ma la speciale capacità lavorativa di cui dispone trova fondamento nella sua natura, prende linfa dalle sue radici, si esterna nell'azione tramite i suoi talenti naturalinon sente assolutamente il bisogno di accasarsi in un'organizzazione non avverte disagio né difficoltà a passare da un reparto ad un altro, da un'azienda ad un'altra per risolvere sempre nuove problematiche.<br>
-    Questa è la sua natura, questa è la sua vita. Questa sua peculiarità trova rispondenza con le attuali esigenze del mercato che ha modificato i comportamenti e gli obiettivi economici. Questo account è da considerare come un porto sicuro per noi Natural Challeman proponiamo obiettivi semplici: trovarci, conoscerci, scambiare esperienze, il resto lo costruiremo insieme.
-</p>
-<p style="font-size:2.5em">I due tipi di manager</p>
-<p>
-    Management significa semplicemente gestire le risorse a disposizione all'interno di un'azienda e le opportunità all'esterno della medesima, utili per il raggiungimento degli obiettivi aziendali.<br>
-    Manager è una risorsa aziendale,in grado di assumersi responsabilità di guida delle risorse umane e tecnologiche operanti in aree ben definite organizzativamente al fine di pervenire agli obiettivi fissati<br><br>
-    Esistono due differenti tipologie di manager: quello di posizionamento e quello di movimentola. Il primo è ha  in azienda a carattere temporaneo, qualunque siano le sue radici: movimento o stabilità il concetto di carriera esiste solo fino ai quadri. Il percorso del quadro si conclude quando diventa manager di posizionamento, che in ogni caso deve accettare che periodicamente la sua area operativa venga analizzata da manager di movimentoil tempo di permanenza in azienda è definito preventivamente ed è direttamente dipendente dall'importanza delle responsabilità e degli obiettivi concordati con il mandante, è sempre breve per i manager da movimento, può essere anche molto lungo per quelli di posizionamento.<br>
-    Il mandante è sempre e solo il titolare dell'azienda o il top manager entrambi naturalmente svolgono bene il lavoro assegnato  perchè dispongono di Talenti naturali specifici per l'attività che hanno sceltocosì come sono ben diversi i Talenti acquisiti che hanno colto per migliorare leloro performances
-</p>
+<div class="center">
+    <p style="font-size:2em">Orari di apertura</p>
+        <div class="row center">
+          <div class="col-xs-6 col-md-4">Lunedì h.8:00-18:00
+          <br>Martedì h.8:00-18:00
+          <br>Mercoledì h.8:00-18:00
+          <br>Giovedì h.8:00-18:00
+          <br>Venerdì h.8:00-18:00</div>
+          <div class="col-xs-6 col-md-4">Sabato h.8.00 -19.00</div>
+          <div class="col-xs-6 col-md-4">Domenica chiuso</div>
+        </div>
+    </p>
+    <p style="font-size:2em">Vieni a trovarci</p>
+    <p>Siamo ad Arese Via San Vittore n°3</p>
+    <div class="row">
+        <div class="col-xs-18 col-md-4 col-md-offset-4">
+            <div id="map" style="width: 300px; height: 300px;"></div>
+               <script>
+                 function initMap() {
+                   var myLatlng = {lat: 45.549739, lng: 9.08113400000002};
+
+                   var map = new google.maps.Map(document.getElementById('map'), {
+                     zoom: 16,
+                     center: myLatlng
+                   });
+
+                   var marker = new google.maps.Marker({
+                     position: myLatlng,
+                     map: map,
+                     title: 'Clicca per zoomare'
+                   });
+
+                   map.addListener('center_changed', function() {
+                     // 3 seconds after the center of the map has changed, pan back to the
+                     // marker.
+                     window.setTimeout(function() {
+                       map.panTo(marker.getPosition());
+                     }, 3000);
+                   });
+
+                   marker.addListener('click', function() {
+                     map.setZoom(8);
+                     map.setCenter(marker.getPosition());
+                   });
+                 }
+               </script>
+               <script async defer
+               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuMpmdCYX3zhYkp0cObjaNvv-z_gshb90&callback=initMap">
+               </script>
+            </div>
+    </div>
+    <p style="font-size:2em">Numeri utili</p>
+    <div class="row">
+        <div class="col-xs-6 col-md-6">Telefono<br>
+            <p class="fa fa-phone-square"><a href="tel:02 9358 9090"> 02 9358 9090</a></p>
+        </div>
+        <div class="col-xs-6 col-md-6">Fax<br>
+            <p class="fa fa-fax"><a href="tel:02 9358 9090"> 02 9358 9090</a></p>
+        </div>
+    </div>
+</div>

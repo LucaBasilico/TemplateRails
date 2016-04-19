@@ -1,8 +1,14 @@
 $navbar-default-bg: #4B67A1;
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+}
 
 @media screen and (min-width: 480px) {
     .jumbotron {
@@ -21,8 +27,12 @@ $navbar-default-bg: #4B67A1;
 }
 
 #logo:hover {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+#map {
+    height: 100%;
 }
 
 .center {
@@ -30,7 +40,7 @@ $navbar-default-bg: #4B67A1;
 }
 
 .jumbotron{
-    background-image: asset-url('challemanMainImage.jpg');
+    background-image: asset-url('bdfMainImage.jpg');
     background-size: cover;
     color: white;
 }
@@ -68,14 +78,4 @@ footer a:hover{
 
 footer small{
     float: left;
-}
-
-#footerLeft{
-    float: left;
-    list-style: none;
-}
-
-#footerRight{
-    float: right;
-    list-style:  none;
 }

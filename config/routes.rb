@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
     root 'pages#home'
     get 'about', to:"pages#about"
-    get 'quality', to:"pages#quality"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
