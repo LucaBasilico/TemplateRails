@@ -4,11 +4,4 @@ class PagesController < ApplicationController
 
   end
 
-  def abouts
-
-  end
-
-  def quality
-
-  end
 end
